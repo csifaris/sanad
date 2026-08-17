@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy: #16284A;
+  --color-teal: #2FA897;
+  --color-sanad-bg: #F7F9FB;
+  --color-status-new: #9CA3AF;
+  --color-status-review: #F59E0B;
+  --color-status-resolved: #10B981;
+
+  --font-heading: var(--font-el-messiri);
+  --font-body: var(--font-tajawal);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #F7F9FB;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #F7F9FB;
+  color: #16284A;
+  font-family: var(--font-tajawal), system-ui, sans-serif;
+}
+
+/* Sanad button system - base styles applied to native buttons, submit inputs, and .btn helper class */
+button,
+input[type="submit"],
+.btn {
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(23, 52, 95, 0.15);
+  transition: all 180ms ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Primary action (teal) */
+.btn-primary,
+button.btn-primary,
+input.btn-primary[type="submit"] {
+  background: #2FAE9E;
+  color: #FFFFFF;
+  border: none;
+}
+.btn-primary:hover { background:#249889; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(23,52,95,0.18);} 
+.btn-primary:active { transform: translateY(0); }
+
+/* Important / login (navy) */
+.btn-navy { background: #17345F; color: #FFFFFF; border: none; }
+.btn-navy:hover { background: #102A4C; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(16,42,76,0.18); }
+
+/* Success */
+.btn-success { background: #238B7A; color: #FFFFFF; border: none; }
+.btn-success:hover { background: #1C7567; }
+
+/* Warning */
+.btn-warning { background: #D9A441; color: #FFFFFF; border: none; }
+.btn-warning:hover { background: #B8872F; }
+
+/* Danger */
+.btn-danger { background: #C94B4B; color: #FFFFFF; border: none; }
+.btn-danger:hover { background: #A83B3B; }
+
+/* Secondary */
+.btn-secondary { background: #E8F3F2; color: #17345F; border: 1px solid #CFE3E0; }
+.btn-secondary:hover { background: #DDF4F0; }
+
+/* Logout (neutral) */
+.btn-logout { background: #F1F5F7; color: #17345F; border: 1px solid #D8E3E8; }
+.btn-logout:hover { background: #E8F3F2; border-color: #2FAE9E; }
+
+/* Make anchor.btn behave like button */
+a.btn { display: inline-flex; }
+
+/* Responsive: primary buttons full-width on small devices when marked .full-mobile */
+@media (max-width: 640px) {
+  .full-mobile { width: 100%; }
 }

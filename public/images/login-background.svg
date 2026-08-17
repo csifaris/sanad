@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFC371"/>
+      <stop offset="35%" stop-color="#FF5F6D"/>
+      <stop offset="70%" stop-color="#2C3E50"/>
+      <stop offset="100%" stop-color="#162B52"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" />
+    </filter>
+  </defs>
+
+  <!-- sky gradient -->
+  <rect width="100%" height="100%" fill="url(#g)" />
+
+  <!-- soft vignette -->
+  <radialGradient id="v" cx="30%" cy="30%" r="80%">
+    <stop offset="0%" stop-color="#00000000" />
+    <stop offset="100%" stop-color="#00000066" />
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#v)" />
+
+  <!-- distant skyline silhouettes (left/mid) -->
+  <g fill="#0b2440" opacity="0.9" transform="translate(40,520)">
+    <path d="M0 180 L40 120 L90 140 L150 80 L220 100 L300 40 L380 90 L460 30 L540 70 L620 10 L700 70 L780 40 L860 100 L940 60 L1020 90 L1100 20 L1180 60 L1260 10 L1340 80 L1420 40 L1500 100 L1580 60 L1660 90 L1740 30 L1820 160 L1820 220 L0 220 Z"/>
+  </g>
+
+  <!-- mid skyline layer -->
+  <g fill="#153653" opacity="0.8" transform="translate(60,580)">
+    <path d="M0 120 L60 40 L140 90 L220 20 L300 80 L380 10 L460 70 L540 20 L620 60 L700 10 L780 50 L860 30 L940 80 L1020 30 L1100 70 L1180 20 L1260 60 L1340 10 L1420 50 L1500 10 L1580 40 L1660 0 L1820 120 L1820 220 L0 220 Z"/>
+  </g>
+
+  <!-- foreground skyline (with warm highlights) -->
+  <g fill="#13324a" opacity="0.95" transform="translate(80,640)">
+    <path d="M0 80 L40 20 L100 60 L160 10 L220 40 L300 0 L380 30 L460 10 L540 40 L620 0 L700 30 L780 10 L860 50 L940 20 L1020 60 L1100 0 L1180 30 L1260 10 L1340 40 L1420 0 L1500 30 L1580 10 L1660 40 L1820 80 L1820 220 L0 220 Z"/>
+  </g>
+
+  <!-- subtle lights dots -->
+  <g fill="#FFD28A" opacity="0.6">
+    <circle cx="120" cy="820" r="3" />
+    <circle cx="240" cy="780" r="2.8" />
+    <circle cx="360" cy="840" r="2.4" />
+    <circle cx="520" cy="800" r="2.6" />
+    <circle cx="680" cy="860" r="2.2" />
+    <circle cx="900" cy="820" r="2.6" />
+    <circle cx="1140" cy="780" r="3" />
+  </g>
+
+  <!-- silhouette of a man on the right (stylized) -->
+  <g transform="translate(1370,380) scale(1.1)" fill="#0b1626" opacity="0.95">
+    <!-- body -->
+    <path d="M80 300 C70 210 60 160 100 120 C140 80 180 90 200 120 C220 150 210 210 200 300 Z" />
+    <!-- head -->
+    <ellipse cx="140" cy="70" rx="38" ry="42" fill="#ffffff" />
+    <!-- ghutra (red pattern) -->
+    <path d="M105 60 C130 20 170 20 195 60 C185 90 150 100 115 90 Z" fill="#DD2E2E" />
+    <path d="M115 60 C140 30 170 30 185 60 C170 85 140 90 115 80 Z" fill="#ffffff" opacity="0.95" />
+    <!-- thobe suggestion -->
+    <path d="M110 110 C140 150 170 150 200 110 L200 260 C170 290 140 300 110 260 Z" fill="#ffffff" opacity="0.98" />
+    <!-- shadow overlay to integrate -->
+    <path d="M80 300 L200 300 L220 330 L60 330 Z" fill="#0b1626" opacity="0.25" />
+  </g>
+
+  <!-- gentle blur to soften details -->
+  <rect width="100%" height="100%" fill="transparent" filter="url(#blur)" opacity="0.18" />
+</svg>

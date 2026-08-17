@@ -32,6 +32,12 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +45,27 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# database
+/data/*.db
+*.db
+*.sqlite
+*.sqlite3
+
+node_modules/
+.next/
+# Local database files
+/data/
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+*.db-journal
+
+# Local development / seed files
+scripts/seed.ts
+test-flows.mjs
+
+# Local AI/editor configuration
+.claude/
