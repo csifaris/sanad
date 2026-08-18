@@ -261,7 +261,7 @@ This project was developed as part of the **Vibe Coding Course** at **SDAIA Acad
 ### 5. Rand Alanazi
 
 <p align="center">
-  <a href="Team Member 5 GitHub URL">
+  <a href="https://github.com/nra27158-ship-it">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" alt="Team Member 5 GitHub">
   </a>
 </p>
@@ -281,7 +281,7 @@ This project was developed as part of the **Vibe Coding Course** at **SDAIA Acad
 ### 7. Afaf AlMutairi
 
 <p align="center">
-  <a href="Team Member 7 GitHub URL">
+  <a href="https://github.com/Afafbader999">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" alt="Team Member 7 GitHub">
   </a>
 </p>
