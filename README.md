@@ -206,7 +206,7 @@ The local database and sensitive configuration files are excluded from the Git r
 
 ## 🎓 Academic Affiliation
 
-Developed as part of the **SDAIA Academy** program.
+This project was developed as part of the **Vibe Coding Course** at **SDAIA Academy**.
 
 <p align="center">
   <a href="https://github.com/SDAIAAcademy">
