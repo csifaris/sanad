@@ -231,7 +231,7 @@ This project was developed as part of the **Vibe Coding Course** at **SDAIA Acad
 ### 2. Khalid saleh
 
 <p align="center">
-  <a href="(https://github.com/khaledsaleh1424-sudo)">
+  <a href="https://github.com/khaledsaleh1424-sudo">
     <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" alt="Team Member 2 GitHub">
   </a>
 </p>
